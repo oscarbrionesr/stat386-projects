@@ -23,7 +23,7 @@ email: oscarbrionesr1@email.com # Add your email
 description: >- # this means to ignore newlines until "baseurl:"
  This is my blog for class STAT386
 baseurl: /stat386-projects # keep this the same or change it to the name of the repository 
-url: https://oscarbrionesr.github.io #  change this to "https://<your-github-username>.github.io"
+url: https://oscarbrionesr.github.io/stat386-projects/ #  change this to "https://<your-github-username>.github.io"
 image: assets/images/pexels-olia-danilevich-4974912.jpg
 author: Oscar Briones Ramirez
 copyright: OBR # Your initials or what you want the copyright to be.  Leave empty for no copyright
