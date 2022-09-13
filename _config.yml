@@ -24,21 +24,21 @@ description: >- # this means to ignore newlines until "baseurl:"
  This is my blog for class STAT386
 baseurl: "/stat386-projects" # keep this the same or change it to the name of the repository 
 url: "https://oscarbrionesr.github.io" #  change this to "https://<your-github-username>.github.io"
-image: "assets/images/image5.jpg"
-author: Your name
-copyright: ABCD # Your initials or what you want the copyright to be.  Leave empty for no copyright
+image: "assets/images/pexels-olia-danilevich-4974912.jpg"
+author: Oscar Briones Ramirez
+copyright: OBR # Your initials or what you want the copyright to be.  Leave empty for no copyright
 
 # Social media users names.  Leave fields blank that you don't want displayed
-twitter_username: 386student
-github_username:  386student
-linkedin_username: 386student
+twitter_username: oscarbrioness1
+github_username:  oscarbrionesr1
+linkedin_username: oscarbrionesr
 dribbble_username: 
-facebook_username: 386student
+facebook_username: obriones1
 flickr_username:
-instagram_username: 
+instagram_username: oscarbrioness
 pinterest_username:
 youtube_username: 
-googleplus_username: 386student
+googleplus_username: 
 
 
 # Build settings
