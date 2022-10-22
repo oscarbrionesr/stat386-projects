@@ -27,7 +27,11 @@ I used the S%P 500 data found in the Stock Market MBA and Liberated Stock Trader
 
 The purpose of this post is to collect the data from the companies in the S&P 500, and look at indicators such market cap, number of employees, priece to earnings ratio, etc. in order to see if there are correlations that can allow us to see what individual companies would be good to invest in.
 
+ I determined that it was allowable to get the data from these sites because the purpose of these websites is to provide financial literacy for the public so that they can be better equiped to make good financial decisioins for their future.
+
 A later post will perform EDA to figure out if there are individual companies worth investing in.
+
+*Complete code and data can be found in [this GitHub repo](https://github.com/oscarbrionesr/sp500-web-scraping).*
 
 ---
 
@@ -111,6 +115,8 @@ The resulting DataFrame contains 478 rows with information on publicly traded co
 
 It might be useful to go to the websites and look at the data there, however, for purpuses of further analysis, I deemed it useful to collect the data from both websites and put it together.
 However, it might be worth taking a look at the readily available data in the websites to see if there is already data that serves more general purposes.
+
+---
 
 # Conclusion
 
