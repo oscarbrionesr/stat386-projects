@@ -99,3 +99,4 @@ sp500.to_csv('s&p500.csv')
 
 Finally, here is my data:
 
+![This is my data](assets/images/spdata.jpeg)
