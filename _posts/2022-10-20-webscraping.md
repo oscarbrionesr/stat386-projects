@@ -99,4 +99,19 @@ sp500.to_csv('s&p500.csv')
 
 Finally, here is my data:
 
-![This is my data](assets/images/spdata.jpeg)
+![This is my data](/assets/images/spdata.jpeg)
+
+
+The resulting DataFrame contains 478 rows with information on publicly traded companies of interest (not all the columns are shown).
+
+
+# A note on pre-generated data versus curated data
+
+It might be useful to go to the websites and look at the data there, however, for purpuses of further analysis, I deemed it useful to collect the data from both websites and put it together.
+However, it might be worth taking a look at the readily available data in the websites to see if there is already data that serves more general purposes.
+
+# Conclusion
+
+In this post I showed how to collect data from multiple websites to create a custom dataset. Particularlly, I am interested in looking at number of employees, market cap, dividend yield, PE ratios, and a few more, in order to show in future posts how to analyze and work with this data to find insights on companies worth investing in.
+
+Let me know if you have any suggestions or questions on this data in the comments below!
