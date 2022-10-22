@@ -4,7 +4,7 @@ title:  "Investing for the Future: Using the S&P 500 index data to find good com
 date:   2022-10-20
 author: Oscar Briones Ramirez
 description: Money well invested brings peace of mind and safety. This post shows how to collect S&P 500 index data from a couple of websites
-image: assets/images/sp.jpeg
+image: assets/images/invest.jpeg
 ---
 
 # Introduction
@@ -13,6 +13,8 @@ Saving money is a very basic principle of personal finance everyone should follo
 
 Inflation causes our money's buying power to decrease year after year, and the money we keep in our bank accounts does not grow over time, even when we have it saved up in a interest-based savings account, the annual percentage yield is usually lower that 1%, which means even though we have money saved up, we won't be able to afford the same things with it in the future.
 This is why is important to, not only save money, but invest it so that its value not only holds up to inflation, but even increases, and allows us to be ready for emergencies and even retirement. There are many ways to invest money in, however, this post will talk about investing in the stock market. 
+
+![Figure](https://github.com/oscarbrionesr/stat386-projects/raw/main/assets/images/invest2.jpeg)
 
 ## How to invest
 
