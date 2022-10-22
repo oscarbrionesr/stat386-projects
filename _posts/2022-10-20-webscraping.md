@@ -72,3 +72,30 @@ df.columns = new_header
 df2 = df2.rename(columns={'Symbol': 'Ticker'})
 
 ```
+
+# Step 3: Merging and cleaning the data
+
+1. Merge both dataframes with the "Ticker" column in common
+
+```
+temp_df = pd.merge(df, df2, on="Ticker")
+```
+
+2. Remove unwanted columns and rename for easy reading.
+I decided I want to have the following columns for future analysis: Ticker,	Company,	Sector,	# Employees,	Market cap,	Dividend yield,	PE Ratio
+
+```
+sp500 = temp_df.drop(['Description', 'Category2', 'Category3', 'GICS Sector', 'Action', 'Price to book value', 'Price to TTM sales'], axis=1)
+
+sp500 = sp500.rename(columns={'Company_x': 'Company', 'Sector_x': 'Sector', 'Price to TTM earnings': 'PE Ratio'})
+
+```
+
+# step 4: Export the data as .csv
+
+```
+sp500.to_csv('s&p500.csv')
+```
+
+Finally, here is my data:
+
