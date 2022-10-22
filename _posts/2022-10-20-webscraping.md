@@ -19,7 +19,7 @@ This is why is important to, not only save money, but invest it so that its valu
 A good rule of thumb is to invest in the S&P 500 index, which represents 500 of the biggest companies in the U.S. Investing in this index, has historically yielded returns of around 10% annually. However, it is also possible to invest in the individual companies in this index, some of which, have yielded up to 30% or even 50% annually.
 
 
-## Lets look at the data
+## Let's look at the data
 
 I used the S%P 500 data found in the Stock Market MBA and Liberated Stock Trader websites. In this post, I explain how I used the pandas to get the data.
 
@@ -35,22 +35,40 @@ I used Python and the Requests package to perform get requests directly to the w
 
 # Step 1: Create requests from websites
 
-1. Import the requests package
+1. Import the requests package:
 
 ```
 import requests
 ```
 
 
-2. Assign websites' urls to variables and perform request
+2. Assign websites' urls to variables and perform request:
 
 ```
 url = "https://www.liberatedstocktrader.com/sp-500-companies-list-by-number-of-employees/"
-url3 = "https://stockmarketmba.com/stocksinthesp500.php"
+url2 = "https://stockmarketmba.com/stocksinthesp500.php"
 
 r = requests.get(url).content
-r3 = requests.get(url3).content
+r2 = requests.get(url2).content
 ```
 
+# Step 2: Create dataframes and clean the data
 
+1. Create dataframes out of the information requested from the websites:
 
+```
+df = pd.read_html(r)[2]
+df2 = pd.read_html(r2)[0]
+```
+
+2. Get dataframes ready to merge them in a later step:
+
+The first dataframe needs to move the 1st row up, to become the header. The second dataframe just needs a column name to be changed in order to match the first dataframe
+```
+new_header = df.iloc[0]
+df = df[1:]
+df.columns = new_header
+
+df2 = df2.rename(columns={'Symbol': 'Ticker'})
+
+```
