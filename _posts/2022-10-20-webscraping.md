@@ -99,7 +99,7 @@ sp500.to_csv('s&p500.csv')
 
 Finally, here is my data:
 
-![This is my data](/assets/images/spdata.jpeg)
+![Figure](https://github.com/oscarbrionesr/stat386-projects/raw/main/assets/images/spdata.jpeg)
 
 
 The resulting DataFrame contains 478 rows with information on publicly traded companies of interest (not all the columns are shown).
