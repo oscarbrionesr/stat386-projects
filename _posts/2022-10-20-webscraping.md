@@ -21,10 +21,36 @@ A good rule of thumb is to invest in the S&P 500 index, which represents 500 of 
 
 ## Lets look at the data
 
+I used the S%P 500 data found in the Stock Market MBA and Liberated Stock Trader websites. In this post, I explain how I used the pandas to get the data.
+
 The purpose of this post is to collect the data from the companies in the S&P 500, and look at indicators such market cap, number of employees, priece to earnings ratio, etc. in order to see if there are correlations that can allow us to see what individual companies would be good to invest in.
+
+A later post will perform EDA to figure out if there are individual companies worth investing in.
 
 ---
 
 # Data Collection
+
+I used Python and the Requests package to perform get requests directly to the websites.
+
+# Step 1: Create requests from websites
+
+1. Import the requests package
+
+```
+import requests
+```
+
+
+2. Assign websites' urls to variables and perform request
+
+```
+url = "https://www.liberatedstocktrader.com/sp-500-companies-list-by-number-of-employees/"
+url3 = "https://stockmarketmba.com/stocksinthesp500.php"
+
+r = requests.get(url).content
+r3 = requests.get(url3).content
+```
+
 
 
